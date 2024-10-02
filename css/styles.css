@@ -1,3 +1,38 @@
-header {
-    background-color: whitesmoke;
+body {
+    font-size: 16px;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.page-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu .item {
+    display: inline;
+}
+
+.menu .link {
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
 }
