@@ -12,99 +12,94 @@
   </head>
   <body>
         <header class="page-header">
-          <div class="container">
-            <a href="./index.html">
-              <img src="img/logo.jpg" alt="logo-site-dance" width="300" /></a>
-              <nav>
-                <ul class="menu">
-                  <li class="item">
-                    <a class="link" href="#about">Про мене</a>
-                  </li>
-                  <li class="item">
-                    <a class="link" href="#team">Наша команда</a>
-                  </li>
-                  <li class="item">
-                    <a class="link" href="#price">Ціна</a>
-                  </li>
-                  <li class="item">
-                    <a class="link" href="#schedule">Розклад</a>
-                  </li>
-                  <li class="item">
-                    <a class="link" href="#gallery">Галерея</a>
-                  </li>
-                  <li class="item">
-                    <a class="link" href="#contacts">Контакти</a>
-                  </li>
-                </ul>
-              </nav>
+          <div class="container header-container">
+            <nav class="header-nav">
+              <a class="logo logo-header" href="./index.html">AnnaNest Dance-Studio</a>
+              <ul class="header-menu">
+                <li class="item header-link">
+                  <a class="link" href="#about">Про нас</a>
+                </li>
+                <li class="item header-link">
+                  <a class="link" href="#foto">Фото</a>
+                </li>
+                <li class="item header-link">
+                  <a href="#contact">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <address class="header-address">
+              <ul class="header-address-menu">
+                <li class="header-address-link">
+                  <a href="mailto:annanest@dance.ua">annanest@dance.ua</a>
+                </li>
+                <li class="header-address-link">
+                  <a href="tel:+380001112233">+380(00)111-22-33</a>
+                </li>
+              </ul>
+            </address>
           </div>
         </header>
+
       <!-- Main content-->
       <main>
-        <h1 id="about">Про мене</h1>
-        <img src="img/anna.jpg" alt="foto-anna" width="300" />
-        <p>
-          Lorem ipsum dolor sit amet
-        </p>
-        <section>
-          <h2 id="team">Наша команда</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos omnis ad
-            laborum eius quasi excepturi quaerat eveniet in maxime, facilis
-            placeat! Provident consectetur accusantium veritatis facilis minima
-            accusamus libero quasi?
-          </p>
+        <section class="big-section">
+          <div class="container big-cont">
+            <h1 id="about">Про нас</h1>
+            <img src="img/anna.jpg" alt="foto-anna" width="300" />
+            <p>
+              Lorem ipsum dolor sit amet
+            </p>
+          </div>
         </section>
-        <section>
-          <h2 id="price">Ціна</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam atque
-            quas earum asperiores ipsam nihil, odio pariatur cumque consectetur
-            omnis nesciunt sed ratione, corrupti saepe possimus suscipit aliquid
-            dignissimos dolorum!
-          </p>
+
+        <section class="gallery-section">
+          <div class="container contain-foto-gallery">
+            <ul>
+              <li>
+                <h2 id="gallery">Фото1</h2>
+                <img src="img/team1.jpg" alt="foto-team1" width="300" />
+                <p>Lorem ipsum dolor</p>
+              </li>
+              <li>
+                <h2 id="gallery">Фото2</h2>
+                <img src="img/team2.jpg" alt="foto-team-2" width="300" />
+                <p>Lorem ipsum dolor</p>
+              </li>
+              <li>
+                <h2 id="gallery">Фото2</h2>
+                <img src="img/team2.jpg" alt="foto-team-2" width="300" />
+                <p>Lorem ipsum dolor</p>
+              </li>
+            </ul>
+          </div>
         </section>
-        <section>
-          <h2 id="schedule">Розклад</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nulla
-            repudiandae autem eveniet! Quae perspiciatis nesciunt suscipit
-            consequuntur numquam aut repudiandae eaque asperiores in inventore,
-            rem accusamus, neque, dolorem non!
-          </p>
-        </section>
-        <section>
-          <h2 id="gallery">Галерея</h2>
-          <img src="img/team1.jpg" alt="foto-team1" width="300" />
-          <p>
-            Lorem ipsum dolor
-          </p>
-          <img src="img/team2.jpg" alt="foto-team-2" width="300" />
-          <p>Lorem ipsum dolor</p>
-        </section>
-        <section>
-          <h2 id="contacts">Контакти</h2>
-          <address>
-            <a href="mailto:annanest@dance.ua">annanest@dance.ua</a><br />
-            <a href="tel:+380001112233">+380(00)111-22-33</a><br />
-            вул.Крещатик, 1<br />
-            1 поверх, офіс 1 <br />
-            м.Київ <br />
-          </address>
-          <button type="button">Передзвоніть мені</button>
+
+        <section class="contacts-section">
+          <div class="container contain-contacts">
+            <h2 id="contacts">Контакти</h2>
+            <button type="button">Перезвоніть мені</button>
+          </div>
         </section>
       </main>
       
       <!--Footer-->
       <footer>
-        <a href="https://www.instagram.com/anna__nest/" target="_blank">
-          <img src="img/instagram-1-svgrepo-com.svg" alt="logo-insta" width="50" height="50">
-        </a>
-      
-        <a href="https://www.facebook.com/" target="_blank">
-          <img src="img/facebook.svg" alt="logo-facebook" width="50" height="50">
-        </a>
-      
+      <section class="section-footer">
+        <div class="container footer-container">
+          <ul>
+            <li>
+              <a class="logo-footer" href="./index.html">AnnaNest DanceStudio</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/anna__nest/" target="_blank"><img src="img/instagram-1-svgrepo-com.svg" alt="logo-insta" width="50" height="50"></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">
+              <img src="img/facebook.svg" alt="logo-facebook" width="50" height="50"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
       </footer>
   </body>
 </html>
