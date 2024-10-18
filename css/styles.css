@@ -1,11 +1,13 @@
 body {
     font-family: "Montserrat",sans-serif;
     background-color: rgb(251, 248, 251);
+    color: rgb(136, 6, 136);;
 }
 
 ul, ol {
     list-style-type: none;
     padding-left: 0;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul {
@@ -20,16 +22,25 @@ a {
     text-decoration: none;
 }
 
+address {
+    font-size: normal;
+}
+
+button {
+    cursor: pointer;
+}
+
 .container {
     max-width: 1158px;
+    margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
-    margin: 0 auto;
 }
 
 .page-header {
     border-bottom: 1px solid rgb(208, 200, 208);
     background-color: rgb(246, 227, 246);
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -65,15 +76,42 @@ a {
     padding: 24px 0;
 }
 
-.header-link {
+.header-link { 
+    display: block;
+    align-items: center;
+}
+
+.nav-link,
+.header-address-link {
     color: rgb(136, 6, 136);
     padding: 24px 0;
     font-weight: 800;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    display: block;
-    align-items: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.header-address-link:hover,
+.header-address-link:focus {
+color: rgb(74, 3, 74);
+}
+
+.nav-link.current {
+    position: relative;
+}
+
+.nav-link.current::before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: rgb(136, 6, 136);
 }
 
 .header-address {
@@ -89,7 +127,137 @@ a {
 
 .header-address-link {
     display: block;
-    padding: 24px 0;
+    padding: 24px;   
+}
+
+/* -----Hero ------- */
+
+
+.hero {
+    padding-top: 150px;
+    padding-bottom: 300px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/hero.jpg);
+    max-width: 1158px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+.hero-cont {
+
+}
+
+.hero-bttn {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: rgb(136, 6, 136)
+    border-radius: 100px;
+    border: none;
+    height: 80px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    min-width: 300px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* -----section Types of Dance */
+
+.container-types-dance {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(247, 241, 247);;
+}
+
+.types-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.types-dance-menu {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.types-dance-menu-link {
+    width: calc((100% - 48px) / 3);
+    border: 1px solid #e7e9fc;
+}
+
+.types-thumb-foto {
+    position: relative;
+    overflow: hidden;
+}
+
+.type-card-overley-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(231, 206, 231);
+    color: rgb(136, 6, 136);
+    padding: 16px;
+    transform: translateY(100%);
+    transition: transform 300ms ease-in-out;
+}
+
+.types-dance-menu-link:hover .type-card-overley-text {
+    transform: translateY(0);
+}
+
+
+.types-thumb-content {
+    padding: 16px 16px;
+}
+
+.type-card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.type-card-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.footer-container {
+    display: flex;
+}
+.footer-social-item {
+    display: flex;
+    width: 1158px;
+    justify-content: center;
+    align-items: center;
 }
 
 
