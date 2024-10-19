@@ -30,6 +30,17 @@ button {
     cursor: pointer;
 }
 
+
+.page-container {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+.main-page {
+    flex-grow: 1;
+}
+
 .container {
     max-width: 1158px;
     margin: 0 auto;
@@ -66,7 +77,6 @@ button {
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: rgb(86, 50, 86);
     margin-right: 76px;
     text-transform: capitalize;
@@ -250,15 +260,49 @@ color: rgb(74, 3, 74);
     letter-spacing: 0.02em;
 }
 
+
+/* ------ Footer------ */
+.section-footer {
+    border-top: 1px solid rgb(208, 200, 208);
+    background-color: rgb(246, 227, 246);
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+}
+
 .footer-container {
     display: flex;
+    align-items: center;
 }
+
+.footer-logo {
+    display: inline-block;
+}
+.wrapper-ftr-social-item {}
+
 .footer-social-item {
     display: flex;
     width: 1158px;
     justify-content: center;
     align-items: center;
 }
+
+.footer-logo {
+    font-weight: 1000;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: rgb(86, 50, 86);
+    margin-right: 76px;
+    text-transform: capitalize;
+    padding: 24px 0;
+}
+.footer-social-link {
+    padding: 24px 0;
+
+}
+
+
+
+
 
 
 
